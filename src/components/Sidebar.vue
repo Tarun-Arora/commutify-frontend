@@ -195,7 +195,6 @@
           </div>
         </v-tab-item>
       </v-tabs-items>
-      <!-- <v-container style="height: 1000px"></v-container> -->
     </div>
   </v-card>
 </template>

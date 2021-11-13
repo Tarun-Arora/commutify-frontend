@@ -1,37 +1,4 @@
 <template>
-  <!-- <div>
-    <v-dialog
-      v-model="registration_dialog"
-      max-width="800px"
-    >
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn
-          color="primary"
-          v-bind="attrs"
-          v-on="on"
-        >
-          Sign Up
-        </v-btn>
-      </template>
-      <Register />
-    </v-dialog>
-
-    <v-dialog
-      v-model="login_dialog"
-      max-width="600px"
-    >
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn
-          color="primary"
-          v-bind="attrs"
-          v-on="on"
-        >
-          Login
-        </v-btn>
-      </template> 
-      <Login />
-    </v-dialog>    
-    </div> -->
   <div class="hero">
     <div class="firefly"></div>
     <div class="firefly"></div>
@@ -58,18 +25,6 @@
         id="lightning"
       />
     </div>
-    <!-- <v-dialog v-model="registration_dialog" max-width="800px">
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn color="primary" v-bind="attrs" v-on="on"> Sign Up </v-btn>
-      </template>
-      <Register />
-    </v-dialog> -->
-
-    <!-- <v-dialog v-model="login_dialog" max-width="600px">
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn color="primary" v-bind="attrs" v-on="on"> Login </v-btn>
-      </template>
-    </v-dialog> -->
     <div class="text-container animated animatedFadeInLeft fadeInLeft">
       <h1>Commutify</h1>
       <p>A New Way to connect to your Community!</p>
@@ -96,13 +51,6 @@
         </template>
         <Register @close='Close_reg'/>
       </v-dialog>
-      <!-- <v-dialog v-model="registration_dialog" max-width="800px">
-        <template v-slot:activator="{ on, attrs }">
-           <v-btn color="primary" v-bind="attrs" v-on="on"> Sign Up </v-btn>
-          <a href="" v-bind="attrs" v-on="on">Register</a>
-        </template>
-        <Register />
-      </v-dialog> -->
     </div>
   </div>
 </template>

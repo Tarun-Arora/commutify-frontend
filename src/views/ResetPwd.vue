@@ -1,30 +1,6 @@
 <template>
   <div>
     <Navbar />
-    <!-- 
-    <label for="newpasswd">
-      <input
-        id="newpasswd"
-        v-model="newpasswd"
-        type="text"
-        v-if="otpsent"
-        name="newpasswd"
-        placeholder="New Password"
-        required
-      />
-    </label>
-    <label for="newpasswd1">
-      <input
-        id="newpasswd1"
-        v-model="newpasswd1"
-        type="text"
-        v-if="otpsent"
-        name="newpasswd1"
-        placeholder="Repeat New Password"
-        required
-      />
-    </label>
-    <button v-if="otpsent" @click="changePwd">Submit</button> -->
     <v-main>
       <v-container fluid fill-height>
         <v-layout align-center justify-center>

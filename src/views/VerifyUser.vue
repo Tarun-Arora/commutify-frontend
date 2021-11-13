@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1 v-if="!verified">Account is being Verified.</h1>
-    <h1 v-if="verified">Account has been Verified.</h1>
+  <div id="nochatopen">
+    <img id="logo" src="@/assets/Commutify-logos_transparent.png" />
+    <p>Verifying Your Account!!</p>
   </div>
 </template>
 
@@ -15,12 +15,16 @@ export default {
   },
   methods: {
     verify() {
-      let email = this.$route.params.email
-      let verify_pin = this.$route.params.pin
-      console.log(email,verify_pin);
-      this.axios.get(`auth/verify/${email}/${verify_pin}/`)
-        .then(()=>{this.verified=true;this.$router.push('/main/')})
-        .catch(err=>console.log(err.response.data))
+      let email = this.$route.params.email;
+      let verify_pin = this.$route.params.pin;
+      console.log(email, verify_pin);
+      this.axios
+        .get(`auth/verify/${email}/${verify_pin}/`)
+        .then(() => {
+          this.verified = true;
+          this.$router.push("/main/");
+        })
+        .catch((err) => console.log(err.response.data));
     },
   },
   created() {
@@ -29,5 +33,15 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+#nochatopen{
+  background: url("../assets/nochatopen.jpg");
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 </style>
